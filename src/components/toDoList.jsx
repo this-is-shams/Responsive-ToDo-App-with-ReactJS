@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ToDoList(props) {
   return (
-    <div className="border border-black m-[64px] w-[450px] md:w-[600px]">
+    <div className="border border-black m-[64px] w-[380px] md:w-[600px]">
       <ul className="space-y-3 text-xl p-[25px] flex flex-col justify-center">
         {props.todoList.map((todo) => (
           <div key={todo.id} className="flex justify-between">

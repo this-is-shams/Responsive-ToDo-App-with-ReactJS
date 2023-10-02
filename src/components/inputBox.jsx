@@ -49,7 +49,7 @@ export default function InputBox() {
           </div>
         </div>
       ) : (
-        <div className="flex border border-black m-[64px] items-center justify-center">
+        <div className="flex border border-black m-[64px] items-center justify-center text-center">
           <p className="text-xl m-[20px]">You don't have any task to do!</p>
         </div>
       )}
