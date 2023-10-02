@@ -3,7 +3,7 @@ import React from "react";
 export default function ToDoList(props) {
   return (
     <div className="border border-black m-[64px] w-[380px] md:w-[600px]">
-      <ul className="space-y-3 text-xl p-[25px] flex flex-col justify-center">
+      <ul className="space-y-3 text-xl p-[10px] flex flex-col justify-center md:p-[25px]">
         {props.todoList.map((todo) => (
           <div key={todo.id} className="flex justify-between items-center">
             <div className="flex items-center gap-3">
