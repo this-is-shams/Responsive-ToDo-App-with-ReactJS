@@ -24,7 +24,7 @@ export default function ToDoList(props) {
                 }}
                 className="w-[30px] h-[15px]"
               ></input>
-              <li className={todo.status === "COMPLETED" ? "line-through" : ""}>
+              <li className={todo.status === "COMPLETED" ? "line-through break-words flex-wrap" : "break-words flex-wrap"}>
                 {todo.title}
               </li>
             </div>
