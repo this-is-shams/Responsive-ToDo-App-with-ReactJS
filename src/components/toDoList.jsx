@@ -5,7 +5,7 @@ export default function ToDoList(props) {
     <div className="border border-black m-[64px] w-[380px] md:w-[600px]">
       <ul className="space-y-3 text-xl p-[25px] flex flex-col justify-center">
         {props.todoList.map((todo) => (
-          <div key={todo.id} className="flex justify-between">
+          <div key={todo.id} className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <input
                 type="checkbox"
@@ -24,12 +24,14 @@ export default function ToDoList(props) {
                 }}
                 className="w-[30px] h-[15px]"
               ></input>
-              <li className={todo.status === "COMPLETED" ? "line-through break-words flex-wrap" : "break-words flex-wrap"}>
+              <div className="w-[200px] flex-wrap break-words lg:w-[420px] md:w-[420px]">
+              <li className={todo.status === "COMPLETED" ? "line-through" : ""}>
                 {todo.title}
               </li>
+              </div>
             </div>
             <button 
-            className="border bg-[#da3e4e] p-[7px] text-white text-sm rounded-lg"
+            className="border bg-[#da3e4e] p-[7px] text-white text-sm rounded-lg h-[40px]"
             onClick={function(){
               props.setTodoList(props.todoList.filter((el) => el.id != todo.id));
             }}
