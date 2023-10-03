@@ -58,7 +58,7 @@ export default function InputBox() {
         </div>
       ) : (
         <div className="md:w-[580px] flex border border-black m-[64px] items-center justify-center text-center">
-          <div><p className="text-xl m-[20px]">You don't have any task to do!</p></div>
+          <div><p className="md:text-xl m-[20px]">You don't have any task to do!</p></div>
         </div>
       )}
     </div>
